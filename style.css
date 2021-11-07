@@ -83,7 +83,8 @@ etiqueta nav*/
 nav
 {
 grid-area: nav;
-border: 2px solid rgb(100, 2, 2);
+border: 2px solid rgb(8, 205, 231);
+background-color: rgb(7, 127, 143);
 align-items: center;
 display: flex;
 height: 100%;
@@ -99,7 +100,7 @@ background-position: center;
 background-size: contain;
 background-attachment: fixed;
 background-repeat: no-repeat;
-border: 2px solid rgb(100, 2, 2);
+border: 2px solid rgb(8, 205, 231);
 max-width: auto;
 padding: 0px;
 max-height: auto;
