@@ -1,0 +1,116 @@
+/* Configura "todos los elementos" para que tengan cero márgenes,
+ y cero padding, haciendo así que se vean igual en todos los navegadores.*/
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+/* Establece propiedades espeificas a  todos los elementos dentro de la 
+etiqueta HTML*/
+html 
+{
+    min-height: 100vh;
+    font-size: 62.5%;
+}
+/* Establece propiedades espeificas a todos los elementos dentro de la 
+etiqueta body*/
+body
+{
+    display: grid;
+    grid-template-rows: 0.25fr 0.1fr 2.4fr 0.25fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                          "nav"
+                         "section"
+                         "footer";
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+/* Establece las propiedades especificas a todos los elementos dentro de la 
+etiqueta header*/
+header 
+{   grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.15fr 0.25fr 2.4fr 0.5fr;
+    grid-template-areas: "header_1 header_2 header_3 header_4";
+    width: 100%;
+    border: 5px solid rgb(2, 100, 35);
+    padding: 5px 5px;
+    color: rgb(15, 14, 14);  
+}
+/* Establece las propiedades especificas a todos los elementos dentro de la 
+del div dentro del header*/
+header .header_1
+{   grid-area:header_1;
+    color: rgb(15, 14, 14);   
+    width: 100%;
+    border: 1px solid rgb(152, 161, 155);
+    padding: 0px 0px;
+}
+header .header_2
+{   grid-area:header_2;
+    color: rgb(15, 14, 14);   
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid rgb(152, 161, 155);
+    padding: 0px 0px;
+}
+header .header_3
+{   grid-area:header_3;
+    color: rgb(15, 14, 14);   
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid rgb(152, 161, 155);
+    padding: 0px 0px;
+}
+header .header_4
+{   grid-area:header_4;
+    color: rgb(15, 14, 14);   
+    width: 100%;
+    border: 5px solid rgb(152, 161, 155);
+    padding: 5px 5px;
+}
+/* Establece las propiedades especificas a todos los elementos dentro de la 
+etiqueta nav*/
+nav
+{
+grid-area: nav;
+border: 2px solid rgb(100, 2, 2);
+align-items: center;
+display: flex;
+height: 100%;
+justify-content: center;
+width: 100%;
+padding: 0px 0px;
+}
+section
+{ 
+grid-area: section;   
+background-image: url(./Central.jpg);
+background-position: center;
+background-size: contain;
+background-attachment: fixed;
+background-repeat: no-repeat;
+border: 2px solid rgb(100, 2, 2);
+max-width: auto;
+padding: 0px;
+max-height: auto;
+}
+/* Establece las propiedades especificas a todos los elementos dentro de la 
+etiqueta footer*/
+footer
+{ 
+    display: grid; 
+    justify-items: center;
+    background-color: rgb(2, 100, 43);
+    grid-area: footer;
+    align-items: stretch;
+}
