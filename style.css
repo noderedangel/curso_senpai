@@ -62,9 +62,10 @@
     }
     header .header_3
     {   grid-area:header_3;
-        color: rgb(15, 14, 14);   
+        color: rgb(8, 223, 19);   
         align-items: center;
         display: flex;
+        font-size: 50pt;
         height: 100%;
         justify-content: center;
         width: 100%;
