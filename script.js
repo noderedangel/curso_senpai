@@ -25,7 +25,7 @@ function actualizar()
 { 
 //función del temporizador
 mihora=mueveReloj(); //recoger hora actual
-mireloj=document.getElementById("reloj"); //buscar elemento reloj
+mireloj=document.getElementById("Hora_actual"); //buscar elemento reloj
 mireloj.innerHTML=mihora; //incluir hora en elemento
 }
 actualizar()
